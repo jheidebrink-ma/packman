@@ -14,6 +14,8 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+        else:
+            game.handle_event(event)
 
     game.update()
     game.draw()
